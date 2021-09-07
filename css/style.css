@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    position: relative;
+}
+/* .menu{
+    display: flex;
+} */
+
+.menu-chird{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s linear;
+    
+}
+.menu-chird-item{
+    width: 25%;
+}
+.menu-chird-item h4{
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    background-color: #88aefd;
+}
+.menu-list{
+    padding: 15px;
+
+}
+.menu-list li{
+    margin-top: 20px;
+    list-style: none;
+}
+.menu-item:hover .menu-chird{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #29e3ec;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 20px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+.menu-cha{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.menu-cha .cate{
+    margin-left: 60px;
+    list-style: none;
+    margin-top: 35px;
+    font-size: 14px;
+}
+.menu-cha li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.menu-cha li a:hover{
+    color: #29e3ec
+}
+.search{
+    width: 350px;
+    float: left;
+    margin-left: 250px;
+}
+.search input{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    margin-top: 15px;
+    border:1px solid 5px;
+    border-right: none;
+    color: #fff;
+    border: 1px solid #29e3ec;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+    float: left;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    margin-top:15px ;
+    background: #29e3ec;
+    border: 0;
+    color: rgb(0, 0, 0);
+    border: 1px solid #29e3ec;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.search input:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .text{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .ba{
+    width: 160px;
+    height: 40px;
+    padding-left: 20px;
+    background: #29e3ec;
+    border: none;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.content .ba a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.content button:hover{
+    background: #fff;
+}
+
+.content span{
+    color: #29e3ec;
+}
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position:absolute;
+    top: -20px;
+    right: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    color: #000000;
+    text-align: center;
+    background-color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #29e3ec;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 2px;
+
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+}
+.btn-login{
+    width: 240px;
+    height: 40px;
+    border: none;
+    background-color: #29e3ec;
+    margin-top: 20px;
+}
+.btn-login a{
+    text-decoration: none;
+}
+.link{
+    margin-top: 20px;
+}
+.signup{
+    color: #29e3ec;
+    text-decoration: none;
+}
+.logup{
+    margin-top: 10px;
+}
+.icons{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 15px;
+    transition: 0.2s ease-in-out;
+}
+.icons ion-icon:hover{
+    color: #29e3ec;
+}
